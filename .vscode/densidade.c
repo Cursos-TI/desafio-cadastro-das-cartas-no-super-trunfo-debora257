@@ -1,0 +1,89 @@
+# include <stdio.h>
+
+int main(){
+	
+	
+	char Estado1[1], Estado2[1];
+	char Cidade1, Cidade2;
+	int Pontosturisticos1, Pontosturisticos2;
+	int Codigo1, Codigo2;
+	int Populacao1, Populacao2;
+	float Area1, Area2;
+	float PIB1, PIB2;
+	
+	printf("Carta 1\n");
+	printf("Digite o Estado1:\n");
+	scanf("%s", &Estado1);
+	
+    printf("Digite o nome da Cidade1:\n");
+	scanf("%s", &Cidade1);
+	
+	printf("Quantos Pontosturisticos1:\n");
+	scanf("%d", &Pontosturisticos1);
+	
+    printf("Digite o Codigo da Carta1:\n");
+	scanf("%d", &Codigo1);
+	
+	printf("Populacao1:\n");
+	scanf("%d", &Populacao1);
+	
+	printf("Digite a Area1:\n");
+	scanf("%f", &Area1);
+	
+	printf("PIB1:\n");
+	scanf("%f", &PIB1);
+	
+	
+	
+	printf("Carta 2\n");
+	printf("Digite o Estado2:\n");
+	scanf("%s", &Estado2);
+	
+    printf("Digite o nome da Cidade2:\n");
+	scanf("%s", &Cidade2);
+	
+	printf("Quantos Pontosturisticos2:\n");
+	scanf("%d", &Pontosturisticos2);
+	
+    printf("Digite o Codigo da Carta2:\n");
+	scanf("%d", &Codigo2);
+	
+	printf("Populacao2:\n");
+	scanf("%d", &Populacao2);
+	
+	printf("Digite a Area2:\n");
+	scanf("%f", &Area2);
+	
+	printf("PIB2:\n");
+	scanf("%f", &PIB2);
+	
+	printf("Carta1\n Estado1: %s\n Cidade1:%s\n", Estado1, Cidade1);
+	printf("Pontosturisticos1: %d\n Codigo1: %d\n Populacao1: %d\n", Pontosturisticos1, Codigo1, Populacao1);
+	printf("Area1: %.2f\n PIB1: %.2f\n", Area1, PIB1);
+
+	printf("Carta2\n Estado2: %s\n Cidade2:%s\n", Estado2, Cidade2);
+	printf("Pontosturisticos2: %d\n Codigo2: %d\n Populacao2: %d\n", Pontosturisticos2, Codigo2, Populacao2);
+	printf("Area2: %.2f\n PIB2: %.2f\n", Area2, PIB2);
+	
+	//Densidade populacional
+	
+	printf("Densidade Populacional Carta1:\n");
+	printf("%d / %.2f\n", &Populacao1, &Area1);
+	
+	printf("Densidade Populacional Carta2:\n");
+	printf("%d / %.2f\n", &Populacao2, &Area2);
+	
+	
+	//PIB Por Capital
+	
+	printf("PIB por Capital Carta 1:\n");
+	printf("%.2f / %d", &PIB1, &Populacao1);
+	
+    printf("PIB por Capital Carta 2:\n");
+	printf("%.2f / %d", &PIB2, &Populacao2);
+	
+		
+	return 0;
+
+	
+}
